@@ -1,13 +1,19 @@
 .sendForm {
+    
 
 }
 
 .textarea {
 
+
 }
 
 .button {
-
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: #0066CC;
 }
 
 .button:hover {
