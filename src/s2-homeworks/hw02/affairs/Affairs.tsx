@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from "react";
 import Affair from './affair/Affair'
 import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
@@ -23,6 +23,9 @@ function Affairs(props: AffairsPropsType) {
     const setLow = () => {
         props.setFilter('low')
     }
+    const [switcher, setSwitcher] = useState<boolean>(false)
+
+    const allOrPriority = (bool: boolean): string => bool ? `${s.affairs} ${s.affairsNoWrap}` : s.affairs
 
     const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
     const cnHigh = s.button + ' ' + s.high + (props.filter === 'high' ? ' ' + s.active : '')
@@ -69,7 +72,7 @@ function Affairs(props: AffairsPropsType) {
                     Low
                 </button>
             </div>
-            <div className={s.affairs}>{mappedAffairs}</div>
+            <div className={allOrPriority(switcher)}>{mappedAffairs}</div>
         </div>
     )
 }
