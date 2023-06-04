@@ -25,11 +25,27 @@
 }
 
 .hw_6 {
-    padding: 5.625rem 4.375rem 3.4375rem 4.375rem;
+    padding: 2rem 4.375rem 14.375rem 4.375rem;
 }
 
 .hw_7 {
     padding: 2rem 4.375rem 12.1875rem 4.375rem;
+}
+
+.hw_8 {
+    padding: 2rem 4.375rem 2.75rem 4.375rem;
+}
+
+.hw_9 {
+    padding: 1.625rem 4.375rem 12.5rem 4.375rem;
+}
+
+.hw_10 {
+    padding: 2rem 4.375rem 12.75rem 4.375rem;
+}
+
+.hw_11 {
+    padding: 4.75rem 4.375rem 12.25rem 4.375rem;
 }
 
 .hw::before,
